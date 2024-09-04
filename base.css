@@ -8,6 +8,7 @@
 
 .container {
   display: flex;
+  margin: 5px 5px 5px 5px;
 }
 .container .navbar {
   background-color: gray;
