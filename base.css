@@ -1,34 +1,48 @@
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+.container .navbar {
+  background-color: gray;
 }
-
-.left-sidebar {
+.container .left-sidebar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
-.top-sidebar {
+.container .left-sidebar .top-sidebar {
   border: solid 1px gray;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.item {
+.container .left-sidebar .top-sidebar .item {
   display: flex;
   align-items: center;
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
 }
-
-.navbar {
-  background-color: gray;
+.container .left-sidebar .top-sidebar .item h4 {
+  margin: 0;
 }
-
-.middle-sidebar {
+.container .left-sidebar .top-sidebar .item .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  margin-right: 10px;
+}
+.container .left-sidebar .middle-sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-.memoji {
+.container .left-sidebar .middle-sidebar h4 {
+  margin-bottom: 10px;
+}
+.container .left-sidebar .middle-sidebar .item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.container .left-sidebar .middle-sidebar .item .memoji {
   height: 50px;
   width: 50px;
+  margin-right: 10px;
+}
+.container .left-sidebar .middle-sidebar .item .text h4 {
+  margin: 0;
 }/*# sourceMappingURL=base.css.map */
