@@ -1,0 +1,80 @@
+// Variables
+$primary-color: #3498db;
+$font-stack: Helvetica, sans-serif;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Extends (Placeholders)
+%btn-base {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+// Base styles
+body {
+  font-family: $font-stack;
+  background-color: #f4f4f4;
+}
+
+// Layouts
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Components
+.button {
+  @extend %btn-base;
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Nesting
+.nav {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover {
+          color: darken($primary-color, 15%);
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .nav {
+    ul {
+      li {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

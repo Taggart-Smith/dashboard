@@ -1,3 +1,14 @@
+.search-bar {
+  width: 500px;
+  color: #C0c0c0;
+}
+.search-bar .input {
+  color: inherit;
+}
+
+.container {
+  display: flex;
+}
 .container .navbar {
   background-color: gray;
 }
@@ -45,4 +56,16 @@
 }
 .container .left-sidebar .middle-sidebar .item .text h4 {
   margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+.content .center-column {
+  flex-grow: 2;
 }/*# sourceMappingURL=base.css.map */

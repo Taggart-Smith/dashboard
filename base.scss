@@ -1,4 +1,10 @@
+@use 'var';
+@use 'components/searchbar';
+
+
 .container {
+    display:flex;
+    
     .navbar {
       background-color: gray;
     }
@@ -64,3 +70,17 @@
       }
     }
   }
+
+
+body{
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    justify-content:center;
+    .center-column {
+        flex-grow: 2;
+    }
+}
+
