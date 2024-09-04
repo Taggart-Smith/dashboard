@@ -1,1 +1,11 @@
-/*# sourceMappingURL=base.css.map */
+.search-bar {
+  width: 500px;
+  color: #C0c0c0;
+}
+.search-bar .input {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=base.css.map */
