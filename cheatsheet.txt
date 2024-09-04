@@ -1,0 +1,31 @@
+scss/
+|
+|– base/           // Variables, resets, typography, etc.
+|   |– _variables.scss    
+|   |– _reset.scss      
+|   |– _typography.scss  
+|
+|– components/     // Buttons, cards, etc.
+|   |– _buttons.scss     
+|   |– _cards.scss       
+|
+|– layout/         // Grid, header, footer, etc.
+|   |– _grid.scss        
+|   |– _header.scss      
+|   |– _footer.scss      
+|
+|– pages/          // Page-specific styles
+|   |– _home.scss        
+|   |– _about.scss       
+|
+|– themes/         // Theme-related styles
+|   |– _theme.scss       
+|
+|– utils/          // Mixins, functions, etc.
+|   |– _mixins.scss      
+|   |– _functions.scss   
+|
+|– vendors/        // Third-party CSS
+|   |– _normalize.scss   
+|
+|– main.scss       // Main file to import all partials
