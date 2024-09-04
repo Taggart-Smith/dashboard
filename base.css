@@ -1,1 +1,15 @@
-/*# sourceMappingURL=base.css.map */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=base.css.map */
