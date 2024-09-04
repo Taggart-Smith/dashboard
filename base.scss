@@ -5,3 +5,11 @@
 body{
     margin: 0;
 }
+
+.content{
+    display: flex;
+    
+    .center-column {
+        flex-grow: 2;
+    }
+}
