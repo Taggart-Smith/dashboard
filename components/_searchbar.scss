@@ -1,10 +1,26 @@
 @use '../var';
 
-.search-bar {
-    color: var.$lightgrey;
+.search-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
 
-    .input{
-        color: inherit;
+    .search-bar{
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid var.$lightgrey;
+        border-radius: 25px;
+        outline: none;   
+    }
+
+    i{
+        position: absolute;
+        left: 26px;
+        top:50%;
+        transform: translateY(-50%);
+        color: var.$lightgrey;
     }
 }
 

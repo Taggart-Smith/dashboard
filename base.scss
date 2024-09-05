@@ -1,6 +1,7 @@
 @use 'var';
 @use 'components/searchbar';
 @use 'center-column';
+@use 'components/sidebar';
 
 
 body{
@@ -9,9 +10,10 @@ body{
 
 .content{
     display: flex;
+    justify-content:center;
     background-color: var.$background;
-
     .center-column {
+        // margin: 20px;
         flex-grow: 2;
     }
 }
