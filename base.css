@@ -39,6 +39,17 @@
   padding: 20px;
   color: #FEFEFE;
 }
+.center-column .online-course .join-now {
+  background-color: #141414;
+  border-radius: 30px;
+  padding: 20px 40px;
+}
+.center-column .online-course .join-now .arrow {
+  background-color: #FEFEFE;
+  color: #141414;
+  border-radius: 100px;
+  padding: 5px;
+}
 
 .content {
   display: flex;
