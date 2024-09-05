@@ -19,5 +19,18 @@
         height: 200px;
         padding: 20px;
         color: var.$offwhite;
+
+        .join-now{
+            background-color: #141414;
+            border-radius: 30px;
+            padding: 20px 40px;
+
+            .arrow{
+                background-color: var.$offwhite;
+                color: #141414;
+                border-radius: 100px;
+                padding: 5px;
+            }
+        }
     }
 }
