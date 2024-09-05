@@ -1,7 +1,7 @@
-@use 'var';
-@use 'components/searchbar';
-@use 'center-column';
-@use 'components/sidebar';
+@use '_var.scss';
+@use 'components/_searchbar.scss';
+@use '_center-column.scss';
+@use 'components/_sidebar.scss';
 
 
 body{
