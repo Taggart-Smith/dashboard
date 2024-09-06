@@ -35,8 +35,15 @@
     margin-right: 18px;
 
     h3 {
-      margin-left: 20px;  
+        margin-left: 20px;  
     }
+
+    img:first-of-type {
+        height: 20px;
+        width: 20px;
+        border: solid 2px red;
+      }
+    
 
     .user-greeting {
         display: flex;
