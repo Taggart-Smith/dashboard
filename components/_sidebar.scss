@@ -66,5 +66,14 @@
           }
         }
       }
+      .lower-sidebar {
+        display:flex;
+        flex-direction:column;
+        background-color:blue;
+        .setting-item {
+          display:flex;
+          justify-content: center;
+        }
+      }
     }
   }

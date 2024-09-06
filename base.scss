@@ -1,7 +1,7 @@
 @use '_var.scss';
 @use 'components/_searchbar.scss';
 @use '_center-column.scss';
-@use 'components/_sidebar.scss';
+@use 'components';
 
 
 body{
@@ -18,4 +18,5 @@ body{
         flex-grow: 2;
     }
 }
+
 
