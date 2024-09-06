@@ -1,7 +1,21 @@
 @use 'var';
 @use 'components/searchbar';
+@use 'center-column';
+@use 'components/sidebar';
+@use 'right-column';
 
 
 body{
     margin: 0;
+    font-family: "Roboto", system-ui;
+}
+
+.content{
+    display: flex;
+    justify-content:center;
+    background-color: var.$background;
+    .center-column {
+        // margin: 20px;
+        flex-grow: 2;
+    }
 }
