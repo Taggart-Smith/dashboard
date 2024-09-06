@@ -79,20 +79,27 @@
         justify-content: space-between;
 
         .btn-box{
-            display: flex;
-            gap: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 100;
 
-            .continue-arrow{
-                background-color: var.$uglyPurple;
-                color: var.$offwhite;
-                border-radius: 30px;
-                padding: 11px;
-
+            .carousel-control.prev {
+                left: 0;
+            }
+            
+            .carousel-control.next {
+                right: 0;
             }
         }
     }
 
-    .content-wrapper{
+    .carousel-inner{
         background-color: var.$offwhite;
         width: 100%;
         display: flex;
@@ -101,7 +108,7 @@
         padding: 10px;
         border-radius: 20px;
 
-        .content-box{
+        .carousel-item{
             width: 200px;
 
             .headingImg{

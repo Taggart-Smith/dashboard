@@ -84,16 +84,23 @@
   justify-content: space-between;
 }
 .center-column .continue .btn-box {
-  display: flex;
-  gap: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
 }
-.center-column .continue .btn-box .continue-arrow {
-  background-color: #6e67e2;
-  color: #FEFEFE;
-  border-radius: 30px;
-  padding: 11px;
+.center-column .continue .btn-box .carousel-control.prev {
+  left: 0;
 }
-.center-column .content-wrapper {
+.center-column .continue .btn-box .carousel-control.next {
+  right: 0;
+}
+.center-column .carousel-inner {
   background-color: #FEFEFE;
   width: 100%;
   display: flex;
@@ -102,30 +109,30 @@
   padding: 10px;
   border-radius: 20px;
 }
-.center-column .content-wrapper .content-box {
+.center-column .carousel-inner .carousel-item {
   width: 200px;
 }
-.center-column .content-wrapper .content-box .headingImg {
+.center-column .carousel-inner .carousel-item .headingImg {
   border-radius: 30px;
 }
-.center-column .content-wrapper .content-box .headingImg img {
+.center-column .carousel-inner .carousel-item .headingImg img {
   width: 200px;
   height: auto;
   border-radius: 30px;
 }
-.center-column .content-wrapper .content-box .title-content .small-title {
+.center-column .carousel-inner .carousel-item .title-content .small-title {
   margin: 5px;
 }
-.center-column .content-wrapper .content-box .title-content .small-title span {
+.center-column .carousel-inner .carousel-item .title-content .small-title span {
   background-color: lightblue;
   border-radius: 20px;
   padding: 2px 10px;
 }
-.center-column .content-wrapper .content-box .title-content .users {
+.center-column .carousel-inner .carousel-item .title-content .users {
   border-top: 2px solid #6e67e2;
   display: flex;
 }
-.center-column .content-wrapper .content-box .title-content .users .mentor-img .memoji {
+.center-column .carousel-inner .carousel-item .title-content .users .mentor-img .memoji {
   height: 50px;
   width: 50px;
   margin-right: 10px;
@@ -244,6 +251,52 @@
 .statistics .user-greeting span {
   font-size: 14px;
   color: #7a7a7a;
+}
+
+/* Carousel container */
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Inner container to hold all items */
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual carousel items */
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+/* Controls (arrows) */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.carousel-control.prev {
+  left: 0;
+}
+
+.carousel-control.next {
+  right: 0;
 }
 
 body {
