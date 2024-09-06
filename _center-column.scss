@@ -4,32 +4,70 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 0px 40px;
+    gap: 40px;
 
     .online-course{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         border-radius: 20px;
-        background-image: url(../images/background.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: calc(100% - 80px);
-        height: 200px;
-        padding: 20px;
+        // background-image: url(../images/background.webp);
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        background-color: var.$uglyPurple;
+        width: 100%;
+        height: auto;
         color: var.$offwhite;
 
-        .join-now{
-            background-color: #141414;
-            border-radius: 30px;
-            padding: 20px 40px;
+        .online-content{
+            padding: 20px;
 
-            .arrow{
-                background-color: var.$offwhite;
-                color: #141414;
-                border-radius: 100px;
-                padding: 5px;
+            .join-now{
+                background-color: #141414;
+                border-radius: 30px;
+                padding: 6px 20px;
+                width: 111px;
+
+                span{
+                    padding-right: 3px;
+                }
+    
+                i{
+                    background-color: var.$offwhite;
+                    color: #141414;
+                    border-radius: 30px;
+                    padding: 11px;
+                }
+            }
+        }
+    }
+
+    .widget-bar{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        justify-content: space-between;
+
+        .widget{
+            display: flex;
+            background-color: white;
+            border-radius: 30px;
+            gap: 17px;
+            align-items: center;
+            padding: 10px;
+
+            .widget-title{
+                .small-title{
+                    color: var.$lightgrey;
+                }
+            }
+
+            .icon {
+                background-color: var.$lightgrey;
+                border-radius: 30px;
+                padding: 20px;
             }
         }
     }
