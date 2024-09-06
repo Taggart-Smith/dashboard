@@ -1,4 +1,4 @@
-@use 'var';
+@use '_var.scss';
 
 .center-column {
     display: flex;
@@ -98,6 +98,8 @@
         display: flex;
         gap: 10px;
         justify-content: space-around;
+        padding: 10px;
+        border-radius: 20px;
 
         .content-box{
             width: 200px;
@@ -114,6 +116,7 @@
             
             .title-content{
 
+
                 .small-title{
                     margin: 5px;
 
@@ -122,6 +125,21 @@
                         border-radius: 20px;
                         padding: 2px 10px;
                     }
+                }
+
+                .users{
+                    border-top:2px solid var.$uglyPurple;
+                    display: flex;
+
+                    .mentor-img{
+                        .memoji {
+                            height: 50px;
+                            width: 50px;
+                            margin-right: 10px;
+                        }
+
+                    }
+
                 }
             }
         }
