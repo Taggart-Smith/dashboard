@@ -24,31 +24,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 40px;
+  gap: 40px;
 }
 .center-column .online-course {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 20px;
-  background-image: url(../images/background.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: calc(100% - 80px);
-  height: 200px;
-  padding: 20px;
+  background-color: #6e67e2;
+  width: 100%;
+  height: auto;
   color: #FEFEFE;
 }
-.center-column .online-course .join-now {
+.center-column .online-course .online-content {
+  padding: 20px;
+}
+.center-column .online-course .online-content .join-now {
   background-color: #141414;
   border-radius: 30px;
-  padding: 20px 40px;
+  padding: 6px 20px;
+  width: 111px;
 }
-.center-column .online-course .join-now .arrow {
+.center-column .online-course .online-content .join-now span {
+  padding-right: 3px;
+}
+.center-column .online-course .online-content .join-now i {
   background-color: #FEFEFE;
   color: #141414;
-  border-radius: 100px;
-  padding: 5px;
+  border-radius: 30px;
+  padding: 11px;
+}
+.center-column .widget-bar {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+.center-column .widget-bar .widget {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  gap: 17px;
+  align-items: center;
+  padding: 10px;
+}
+.center-column .widget-bar .widget .widget-title .small-title {
+  color: #C0c0c0;
+}
+.center-column .widget-bar .widget .icon {
+  background-color: #C0c0c0;
+  border-radius: 30px;
+  padding: 20px;
 }
 
 .content {
@@ -129,6 +156,7 @@
 }
 .container .left-sidebar .top-sidebar .item h4 {
   margin: 0;
+  font-family: "Roboto", system-ui;
 }
 .container .left-sidebar .top-sidebar .item .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
