@@ -242,6 +242,20 @@
   margin-top: 30px;
 }
 
+.your-mentors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.your-mentors h3 {
+  margin-left: 10px;
+}
+.your-mentors i {
+  margin-right: 40px;
+  font-size: 25px;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", system-ui;
